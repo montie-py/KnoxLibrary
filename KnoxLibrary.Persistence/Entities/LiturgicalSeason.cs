@@ -2,6 +2,7 @@
 
 internal class LiturgicalSeason
 {
-    internal required int Id { get; set; }
-    internal required string Name { get; set; }
+    public required int Id { get; set; }
+    public required string Name { get; set; }
+    public required ISet<Entry> Entries { get; set; }
 }

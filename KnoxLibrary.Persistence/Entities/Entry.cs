@@ -5,12 +5,14 @@ namespace KnoxLibrary.Persistence.Entities;
 internal class Entry
 {
     [Key]
-    internal required string CatalogueLocation { get; set; }
-    internal required string Title { get; set; }
-    internal required string Author { get; set; }
-    internal required Genre Genre { get; set; }
-    internal required string Arranger { get; set; }
-    internal required ISet<Voice> Voices { get; set; }
-    internal required LiturgicalSeason LiturgicalSeason { get; set; }
-    internal string File { get; set; }
+    public required string CatalogueLocation { get; set; }
+    public string Title { get; set; }
+    public string Author { get; set; }
+    public Genre Genre { get; set; }
+    public int GenreId { get; set; }
+    public string Arranger { get; set; }
+    public string Voices { get; set; }
+    public LiturgicalSeason LiturgicalSeason { get; set; }
+    public int LiturgicalSeasonId { get; set; }
+    public string File { get; set; }
 }
