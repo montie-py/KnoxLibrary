@@ -2,7 +2,7 @@
 
 namespace KnoxLibrary.Persistence.Entities;
 
-internal class Entry
+internal class Entry : IEntity
 {
     [Key]
     public required string CatalogueLocation { get; set; }

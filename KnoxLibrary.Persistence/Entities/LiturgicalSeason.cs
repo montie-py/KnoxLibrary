@@ -1,6 +1,6 @@
 ﻿namespace KnoxLibrary.Persistence.Entities;
 
-internal class LiturgicalSeason
+internal class LiturgicalSeason : IEntity
 {
     public required int Id { get; set; }
     public required string Name { get; set; }
